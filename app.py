@@ -1,10 +1,25 @@
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello from the list!"
+    return render_template('index.html')
+
+
+@app.route('/add_to_list')
+def add_to_list():
+    pass
+
+
+@app.route('/view_list')
+def view_list():
+    pass
+
+
+@app.route('/edit_list')
+def edit_list():
+    pass
     
     
 if __name__ == '__main__':
