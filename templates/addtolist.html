@@ -11,10 +11,12 @@
     <section id="form">
         <form action="{{ url_for('add_to_list') }}" method="POST">
             <label for="name">Name of Item: </label>
-            <input type="text" name="name" id="title" placeholder="Name of item" required>
+            <input type="text" name="name" id="title" placeholder="Name of Item" required>
+            <label for="date">Date Added</label>
+            <input type="date" name="date" id="date" required>
             <div>
                 <button type="reset">Cancel</button>
-                <button type="Submit">Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </section>
